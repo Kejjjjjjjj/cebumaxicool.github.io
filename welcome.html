@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Maxi Cool Inc. - Welcome</title>
+  <link rel="stylesheet" type="text/css" href="style.css"> <!-- Link your CSS file -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Add jQuery library -->
+  <script>
+    $(document).ready(function() {
+      // Smooth scrolling to the contact section
+      $('a[href^="#"]').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if (target.length) {
+          event.preventDefault();
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 800);
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="welcome.html">Home</a></li>
+        <li><a href="#services">Offers</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="#contact">Contact</a></li> <!-- Update the href attribute -->
+      </ul>
+    </nav>
+    <img src="images/logo.jpg" alt="Maxi Cool"> <!-- Add your company logo -->
+  </header>
+  
+  <main>
+    <section id="hero">
+      <h1>Welcome to Cebu Maxi Cool Inc.</h1>
+      <p>God is Good All the Time</p>
+      <a href="#services" class="btn">Offers</a>
+    </section>
+    
+    <h2 id="services">Our Services</h2>
+    <!-- Room service details... -->
+
+    <div class="centered">
+      <div class="service">
+        <img src="images/1.jpg" alt="Room 1">
+        <h3>Aircon Repair</h3>
+        <p>Repair or Replacement: After determining the root cause of the problem, the technician will recommend a suitable solution. Depending on the issue, they may repair or replace faulty components such as motors, capacitors, thermostats, or refrigerant lines. In some cases, the entire unit might need to be replaced if it is old or beyond repair.</p>
+      </div>
+      
+      <div class="service">
+        <img src="images/3.jpg" alt="Room 2">
+        <h3>System Cleaning</h3>
+        <p>Along with repairs, the technician may clean the air conditioning system to remove dust, debris, or mold that can affect its performance. This may involve cleaning or replacing air filters, clearing clogged drain lines, or cleaning the evaporator and condenser coils.</p>
+      </div>
+      
+      <div class="service">
+        <img src="images/4.jpg" alt="Room 2">
+        <h3>Maintenance</h3>
+        <p>To prevent future issues, the technician may provide maintenance recommendations. This can include regular filter replacements, coil cleanings, lubrication of moving parts, and scheduled professional maintenance to keep the air conditioner in optimal condition.</p>
+      </div>
+    </div>
+    
+    <section id="contact"> <!-- Add the id attribute -->
+      <h2>Contact Us</h2>
+      <p>For inquiries and reservations, please get in touch:</p>
+      <p>Facebook: https://www.facebook.com/grace.maxicool</p>
+      <p>Email: cebumaxicoolinc@gmail.com</p>
+      <p>Phone: 346-7581, 345-6951, 346-7244</p>
+      <p>Sun: 09238261433</p>
+      <p>TM: 09774338036</p>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; <?php echo date('Y'); ?> Cebu Maxi Cool Inc.. All rights reserved.</p>
+  </footer>
+  
+  <script src="script.js"></script> <!-- Include your JavaScript file if needed -->
+</body>
+</html>
